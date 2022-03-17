@@ -1,1 +1,2 @@
 SCREEN_SIZE = [500, 500]
+SCREEN_COLOR = (0, 0, 0)
