@@ -1,4 +1,6 @@
 import random
+from player import *
+from outcome import *
 
 class Yahtzee():
 
@@ -53,6 +55,12 @@ class Yahtzee():
     
     def createGame(self):
         pass
+    
+    def getGameContinue(self):
+        return self.gameContinue
+    
+    def setGameContinue(self, newVal):
+        self.gameContinue = newVal
 
 
 
