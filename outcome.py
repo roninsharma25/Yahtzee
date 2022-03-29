@@ -4,17 +4,16 @@ class YahtzeeOutcome():
 
     def __init__(self):
         self.numYahtzees = 0
-        self.outcome = ''
     
     def selectOutcome(self):
-        print('Possible outcomes: ', '.'.join(OUTCOMES))
+        print('Possible outcomes: ', ','.join(OUTCOMES))
         outcome = input('Choose an outcome: ')
 
         while outcome not in OUTCOMES:
             print('Possible outcomes: ', '.'.join(OUTCOMES))
             outcome = input('That was not a valid outcome')
         
-        self.outcome = outcome
+        return outcome
 
     
     def getScore(self, outcome, nums):
